@@ -47,11 +47,11 @@ class Dog
       LIMIT 1
     SQL
     DB[:conn].execute(sql, id).map do |row|
-      self.new_by_id(row)
+      self.new_from_db(row)
     end.first
   end
 
-  def self.new_by_id(row)
+  def self.new_from_db(row)
     new_dog = self.new
     new_dog.id = row[0]
     new_dog.name = row[1]
