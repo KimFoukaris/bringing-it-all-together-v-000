@@ -58,3 +58,5 @@ def self.new_by_id(row)
   new_dog.breed = row[2]
   new_dog
 end
+
+end
