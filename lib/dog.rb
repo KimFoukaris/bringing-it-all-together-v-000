@@ -76,5 +76,5 @@ class Dog
     sql = "UPDATE songs SET name = ?, breed = ?, where id = ?"
     DB[:conn].execute(sql, self.name, self.breed, self.id)
   end
-    
+
 end
