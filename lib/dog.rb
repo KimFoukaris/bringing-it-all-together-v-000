@@ -51,7 +51,7 @@ def self.find_by_id(id)
   end.first
 end
 
-def new_by_id(row)
+def self.new_by_id(row)
   new_dog = self.new
   new_dog.id = row[0]
   new_dog.name = row[1]
